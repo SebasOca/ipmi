@@ -11,13 +11,35 @@ void draw() {
   noFill ();
 
   stroke (0);
+  //Lados de la figura superior izquierda
+  strokeWeight (15);
+  bezier (543, 206, 513, 174, 510, 127, 530, 87);
+  bezier (543, 206, 501, 158, 504, 113, 524, 84);
+
+  //Lados de la figura superior derecha
+  strokeWeight (15);
+  bezier (615, 132, 645, 105, 696, 99, 726, 126);
+  bezier (615, 132, 645, 90, 696, 83, 728, 110);
+
+  //Lados de la figura inferior izquierda
+  strokeWeight (15);
+  bezier (620, 238, 601, 295, 552, 305, 505, 289);
+  bezier (620, 247, 601, 316, 552, 320, 503, 293);
+
+  //Lados de la figura inferior derecha
+
+  strokeWeight (15);
+  bezier (672, 198, 707, 217, 719, 265, 694, 308);
+  bezier (672, 198, 725, 217, 736, 265, 705, 317);
+
+
   //Lados de la figura menor izquierda
   strokeWeight (12);
   bezier (494, 188, 488, 226, 517, 236, 540, 237);
   bezier (500, 196, 495, 226, 517, 236, 540, 237);
   strokeWeight (9);
   bezier (500, 186, 512, 200, 524, 215, 538, 219);
-  
+
   //Lados de la figura menor derecha
   strokeWeight (13);
   bezier (693, 168, 717, 160, 738, 181, 740, 214);
