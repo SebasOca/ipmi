@@ -7,7 +7,7 @@ int tiempo = 0;
 void setup() {
   size (640, 480);
   tipografia = loadFont ("Herculanum.vlw");
-  textFont (tipografia, 32);
+  textFont (tipografia);
 
   portada = loadImage ("portada.jpg");
   imagen1 = loadImage ("huida.jpg");
@@ -128,14 +128,17 @@ void draw() {
     tiempo++;
     if (tiempo>=1300) {
       pantalla++;
-    }*/
-  } else if (pantalla == 2) {
+    }
+  } else if (pantalla == 8) {
    image (imagen8, 0, 0, 640, 480);
    
    fill (255);
-   //if (textSize < 22){
-     textSize (-160+tiempo/4);
-   //}
+   float tamT = -200 + tiempo/4;
+   if (tamT < 22){
+     textSize (tamT);
+   } else if (tamT >= 22){
+     textSize (22);
+   }
     textAlign(CENTER);
     textLeading(36);
     text ("Aang y Zuko descubren los verdaderos secretos \ndel Fuego Control de los antiguos Guerreros \ndel Sol, y tiempo después, Sokka y Zuko después \nviajan a la prisión Roca Hirviente, de la Nación \ndel Fuego, para rescatar al padre de Sokka y a \nSuki, una guerrera de la Isla Kyoshi. ", 320, 200);
@@ -143,21 +146,21 @@ void draw() {
    tiempo++;
    if (tiempo>=950) {
    pantalla++;
-   }
-   } /*else if (pantalla == 10) {
+   }*/
+   } else if (pantalla == 2) {
    image (imagen9, 0, 0, 640, 480);
    
    fill (255);
-   textSize (64);
-   text ("Avatar", 200, 370+(tiempo*3+2));
-   textSize (32);
-   text ("la leyenda de Aang", 170, 410+(tiempo*3+2));
-   
+   textSize (22);
+   textLeading(36);
+   text ("En el día del Cometa Sozin, Ozai aprovecha \nel increíble poder y energía del cometa \npara intentar dominar al resto \ndel mundo.", 50, -100+(tiempo));
+   text ("El equipo se separan para hacer frente al \nauto-proclamado Rey Fénix Ozai, su flota \naérea y a Azula.", 50, -350+(tiempo));
+
    tiempo++;
    if (tiempo>=900) {
-   pantalla++;
+     pantalla++;
    }
-   } else if (pantalla == 11) {
+   } /*else if (pantalla == 11) {
    image (imagen10, 0, 0, 640, 480);
    
    fill (255);
