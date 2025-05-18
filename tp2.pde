@@ -28,7 +28,6 @@ void setup() {
 void draw() {
   if (pantalla == 0) {
     image (portada, 0, 0, 640, 480);
-    ellipse (578, 434, 56, 56);
     image (boton1, 550, 408, 56, 56);
     fill (255);
     textSize (64);
