@@ -1,0 +1,181 @@
+PFont tipografia;
+PImage portada, boton1, imagen1, imagen2, imagen3, imagen4, imagen5, imagen6, imagen7, imagen8, imagen9, imagen10;
+
+int pantalla = 0;
+int tiempo = 0;
+
+void setup() {
+  size (640, 480);
+  tipografia = loadFont ("Herculanum.vlw");
+  textFont (tipografia, 32);
+
+  portada = loadImage ("portada.jpg");
+  imagen1 = loadImage ("huida.jpg");
+  imagen2 = loadImage ("iceberg.png");
+  imagen3 = loadImage ("mapa.jpg");
+  imagen4 = loadImage ("haz.jpg");
+  imagen5 = loadImage ("toph.png");
+  imagen6 = loadImage ("herido.jpg");
+  imagen7 = loadImage ("invasion.jpg");
+  imagen8 = loadImage ("dragones.jpg");
+  imagen9 = loadImage ("zuko_azula.jpg");
+  imagen10 = loadImage ("avatar_aang.jpg");
+
+  boton1 = loadImage ("boton1.png");
+}
+
+//\n
+void draw() {
+  if (pantalla == 0) {
+    image (portada, 0, 0, 640, 480);
+    ellipse (578, 434, 56, 56);
+    image (boton1, 550, 408, 56, 56);
+
+    fill (255);
+    textSize (64);
+    text ("Avatar", 200, 370);
+    textSize (32);
+    text ("la leyenda de Aang", 170, 410);
+  } else if (pantalla == 1) {
+    image (portada, 0, 0, 640, 480);
+
+    fill (255);
+    textSize (64);
+    text ("Avatar", 200, 370+(tiempo*3+2));
+    textSize (32);
+    text ("la leyenda de Aang", 170, 410+(tiempo*3+2));
+
+    tiempo++;
+    if (tiempo>=90) {
+      pantalla++;
+    }
+    /*} else if (pantalla == 2) {
+     image (imagen1, 0, 0, 640, 480);
+     
+     fill (255);
+     textSize (24);
+     textLeading(36);
+     text ("Hace cien años, un joven maestro aire, \ndescubre que es el nuevo Avatar.", 600-(tiempo*1.5), 100);
+     text ("Temeroso de las pesadas responsabilidades de \ndetener una gran guerra inminente y con la", 800-(tiempo*1.5), 180);
+     text ("cercana separación de su mentor, el Monje \nGyatso, Aang huye de su casa en su bisonte \nvolador Appa.", 900-(tiempo*1.5), 250);
+     text ("Durante una tormenta, caen al mar y el Estado \nAvatar de Aang los congela dentro de un iceberg.", 1000-(tiempo*1.5), 360);
+     
+     tiempo++;
+     if (tiempo>=830) {
+     pantalla++;
+     }
+     
+     } else if (pantalla == 3) {
+     image (imagen2, 0, 0, 640, 480);
+     fill (0);
+     textSize (22);
+     textLeading(36);
+     text ("Aang y Appa son despertados cien años después \npor Katara y Sokka, dos hermanos de la Tribu \nAgua del Sur. Aang se entera que la Nación \ndel Fuego comenzó una guerra y exterminó a \ntodos los maestros aire, siendo ahora el \núltimo Maestro Aire.", 50, 700-(tiempo*1.2));
+     
+     tiempo++;
+     if (tiempo>=1080) {
+     pantalla++;
+     }
+     } else if (pantalla == 4) {
+     image (imagen3, -70, 0, 780, 480);
+     fill(255, 150);
+     rect (0, 0, 640, 480);
+     fill (0);
+     textSize (22);
+     textLeading(36);
+     text ("Aceptando su destino como Avatar y derrotar \na la Nación del Fuego, Aang se dispone a \ndominar los otros tres elementos: agua, \ntierra y fuego.", 50, 700-(tiempo));
+     text ("Con Katara, Sokka y sus dos mascotas (Appa y \nMomo), Aang decide ir primero al Polo \nNorte para encontrar un Maestro del Agua \nControl, mientras escapa del Príncipe Zuko.", 50, 900-(tiempo));
+     
+     
+     tiempo++;
+     if (tiempo>=1080) {
+     pantalla++;
+     
+     } else if (pantalla == 5) {
+     image (imagen5, 0, 0, 640, 480);
+     
+     fill (255);
+     textSize (22);
+     textLeading(36);
+     text ("Después de dejar el Polo Norte y dominar el \nAgua Control, Aang y sus amigos viajan al \nReino Tierra y conocen a Toph, una \nMaestra Tierra ciega.", 800-(tiempo), 100);
+     text ("Con información sobre un eclipse solar que \ndebilitaría a la Nación del Fuego, el grupo \nintenta alcanzar al Rey Tierra, un títere \npolítico.", 1000-(tiempo), 300);
+     
+     tiempo++;
+     if (tiempo>=1800) {
+     pantalla++;
+     }
+     } else if (pantalla == 6) {
+     image (imagen6, 0, 0, 640, 480);
+     fill (255);
+     textSize (22);
+     textLeading(36);
+     text ("Fugitivos por traición, Zuko y su tío Iroh \nson perseguidos por Azula (su hermana y \nPrincesa de la Nación del Fuego) y sus amigas \nMai y Ty Lee, al intentar llegar a Ba Sing Se.", 800-(tiempo), 100);
+     text ("Azula convence a Zuko y logra ingeniar un \ngolpe de estado y herir al Avatar.", 1000-(tiempo), 300);
+     
+     tiempo++;
+     if (tiempo>=1600) {
+     pantalla++;
+     }
+  } else if (pantalla == 7) {
+    image (imagen7, 0, 0, 640, 480);
+
+    fill (255);
+    textSize (22);
+    textLeading(36);
+    text ("Recuperados de la caída de Ba Sing Se, el \ngrupo se alista para liderar una pequeña \ninvasión con los aliados que reunieron.", 50, -100+(tiempo));
+    text ("Pero Azula frustra sus planes, mientras que \nZuko confronta a su padre y termina \nenseñando Fuego Control al Avatar.", 50, -350+(tiempo));
+
+    tiempo++;
+    if (tiempo>=1300) {
+      pantalla++;
+    }*/
+  } else if (pantalla == 2) {
+   image (imagen8, 0, 0, 640, 480);
+   
+   fill (255);
+   //if (textSize < 22){
+     textSize (-160+tiempo/4);
+   //}
+    textAlign(CENTER);
+    textLeading(36);
+    text ("Aang y Zuko descubren los verdaderos secretos \ndel Fuego Control de los antiguos Guerreros \ndel Sol, y tiempo después, Sokka y Zuko después \nviajan a la prisión Roca Hirviente, de la Nación \ndel Fuego, para rescatar al padre de Sokka y a \nSuki, una guerrera de la Isla Kyoshi. ", 320, 200);
+
+   tiempo++;
+   if (tiempo>=950) {
+   pantalla++;
+   }
+   } /*else if (pantalla == 10) {
+   image (imagen9, 0, 0, 640, 480);
+   
+   fill (255);
+   textSize (64);
+   text ("Avatar", 200, 370+(tiempo*3+2));
+   textSize (32);
+   text ("la leyenda de Aang", 170, 410+(tiempo*3+2));
+   
+   tiempo++;
+   if (tiempo>=900) {
+   pantalla++;
+   }
+   } else if (pantalla == 11) {
+   image (imagen10, 0, 0, 640, 480);
+   
+   fill (255);
+   textSize (64);
+   text ("Avatar", 200, 370+(tiempo*3+2));
+   textSize (32);
+   text ("la leyenda de Aang", 170, 410+(tiempo*3+2));
+   
+   tiempo++;
+   if (tiempo>=990) {
+   pantalla++;
+   }
+   }*/
+}
+
+
+void mouseClicked() {
+  if (dist(mouseX, mouseY, 578, 434) < 27 ) {
+    pantalla = 1;
+  }
+}
