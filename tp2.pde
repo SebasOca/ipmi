@@ -144,12 +144,12 @@ void draw() {
     fill (255);
     textSize (22);
     textLeading(36);
-    if (posX < 250) {
+    if (posX < 350) {
       text ("En el día del Cometa Sozin, Ozai aprovecha \nel increíble poder y energía del cometa \npara intentar dominar al resto \ndel mundo.", posX, 100);
       text ("El equipo se separan para hacer frente al \nauto-proclamado Rey Fénix Ozai, su flota \naérea y a Azula.", posX, 300);
-    } else if (posX >= 250) {
-      text ("En el día del Cometa Sozin, Ozai aprovecha \nel increíble poder y energía del cometa \npara intentar dominar al resto \ndel mundo.", 250, 100);
-      text ("El equipo se separan para hacer frente al \nauto-proclamado Rey Fénix Ozai, su flota \naérea y a Azula.", 250, 300);
+    } else if (posX >= 350) {
+      text ("En el día del Cometa Sozin, Ozai aprovecha \nel increíble poder y energía del cometa \npara intentar dominar al resto \ndel mundo.", 350, 100);
+      text ("El equipo se separan para hacer frente al \nauto-proclamado Rey Fénix Ozai, su flota \naérea y a Azula.", 350, 300);
     }
     tiempo++;
     if (tiempo>=8000) {
@@ -166,11 +166,11 @@ void draw() {
     textLeading(36);
     fill (255);
     if (posY < 280) {
-      text ("Tras intensas batallas, Aang logra derrotar \na Ozai y quitarle sus habilidades; Zuko y \nKatara derrotan Azula antes de su coronación; \ny Sokka, Toph y Suki destruyen la flota aérea.", 30, posY-200);
-      text ("Zuko se convierte en el nuevo Señor del Fuego \ny ayuda a reconstruir el mundo después \nde la guerra. Mientras Aang logra paz y estar \njunto a Katara.", 30, posY);
+      text ("Tras intensas batallas, Aang logra derrotar \na Ozai y quitarle sus habilidades; Zuko y \nKatara derrotan Azula antes de su coronación; \ny Sokka, Toph y Suki destruyen la flota aérea.", 320, posY-200);
+      text ("Zuko se convierte en el nuevo Señor del Fuego \ny ayuda a reconstruir el mundo después \nde la guerra. Mientras Aang logra paz y estar \njunto a Katara.", 320, posY);
     } else if (posY >= 280) {
-      text ("Tras intensas batallas, Aang logra derrotar \na Ozai y quitarle sus habilidades; Zuko y \nKatara derrotan Azula antes de su coronación; \ny Sokka, Toph y Suki destruyen la flota aérea.", 30, 80);
-      text ("Zuko se convierte en el nuevo Señor del Fuego \ny ayuda a reconstruir el mundo después \nde la guerra. Mientras Aang logra paz y estar \njunto a Katara.", 30, 280);
+      text ("Tras intensas batallas, Aang logra derrotar \na Ozai y quitarle sus habilidades; Zuko y \nKatara derrotan Azula antes de su coronación; \ny Sokka, Toph y Suki destruyen la flota aérea.", 320, 80);
+      text ("Zuko se convierte en el nuevo Señor del Fuego \ny ayuda a reconstruir el mundo después \nde la guerra. Mientras Aang logra paz y estar \njunto a Katara.", 320, 280);
     }
     tiempo++;
   }
