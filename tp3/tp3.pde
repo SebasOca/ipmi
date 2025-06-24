@@ -16,7 +16,7 @@ void setup() {
 }
 
 void draw() {
-  lineasFondo();
+  lineasFondo2();
   rotate(0.0046);
   image(obra, 0, 0, 400, 400);
   circuloAzul();
@@ -33,7 +33,3 @@ void draw() {
     posX=481;
   }
 }
-
-/*void mouseClicked() {
- 
- }*/

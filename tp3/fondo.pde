@@ -34,7 +34,6 @@ void lineasFondo() {
   
   for (int j=0; j<90; j=j+1) {
     for (int i=0; i<12; i=i+1) {
-      //fill(colorOrdenSup[i]);
       float inter = map(i, 0, 400, 0, 1);
       color c = lerpColor(colorOrdenSup[i], colorOrdenInf[i], inter);
       fill(c);
