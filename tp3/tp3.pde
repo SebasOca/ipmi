@@ -16,12 +16,12 @@ void setup() {
 }
 
 void draw() {
-  lineasFondo2();
+  //lineasFondo();
   rotate(0.0046);
   image(obra, 0, 0, 400, 400);
   circuloAzul();
-  circuloAmarillo();
-  circuloNaranja();
+  //circuloAmarillo();
+  //circuloNaranja();
 
   if (mousePressed == true) {
     if (posX <= 481) {

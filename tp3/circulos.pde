@@ -1,7 +1,7 @@
 void circuloAzul() {
   int posXAz = posX;
   int posXAz2 = posXAz+244;
-  
+
   colorAz1 = color(33, 66, 172);
   colorAz2 = color(24, 48, 120);
   colorAz3 = color(51, 20, 0);
