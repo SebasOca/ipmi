@@ -1,4 +1,4 @@
-void lineasFondo() {
+/*void lineasFondo() {
   color[] colorOrdenSup = {colorL1, colorL2, colorL3, colorL4, colorL5, colorL6, colorL7, colorL8, colorL9, colorL10, colorL11, colorL12};
 
   colorL1 = color (113, 133, 103);
@@ -15,7 +15,7 @@ void lineasFondo() {
   colorL12 = color (16, 32, 25);
 
   color[] colorOrdenInf = {colorLB1, colorLB2, colorLB3, colorLB4, colorLB5, colorLB6, colorLB7, colorLB8, colorLB9, colorLB10, colorLB11, colorLB12};
-  
+
   colorLB1 = color (40, 39, 21);
   colorLB2 = color (118, 144, 92);
   colorLB3 = color (45, 82, 79);
@@ -31,7 +31,7 @@ void lineasFondo() {
 
   rotate (-0.0046);
   noStroke();
-  
+
   for (int j=0; j<90; j=j+1) {
     for (int i=0; i<12; i=i+1) {
       float inter = map(i, 0, 400, 0, 1);
@@ -41,3 +41,4 @@ void lineasFondo() {
     }
   }
 }
+*/
