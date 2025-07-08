@@ -1,4 +1,10 @@
-void circulo(int posX1, int posX2, int posY1, color colorSup, color colorMed, color colorInf) {  
+void tresCirculos(){
+  circulo(426, 670, 234, color(5, 7, 50), color(104, 58, 46), color(152, 92, 44));
+  circulo(481, 725, 160, color(33, 66, 172), color(24, 48, 120), color(51, 20, 0));
+  circulo(531, 775, 234, color(115, 135, 97), color(141, 125, 75), color(202, 195, 84));
+}
+
+void circulo(int posX1, int posX2, int posY1, color colorSup, color colorMed, color colorInf) {
   for (int i = 0; i < 31; i++) {
     float alturaLinea = 51 * i / (3 + i / 3.3);
     float posXAz = posX1 + i * 4;
