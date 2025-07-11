@@ -2,6 +2,7 @@
 
 PImage obra;
 color colorLineaArriba1, colorLineaArriba2, colorLineaArriba3, colorLineaArriba4, colorLineaArriba5, colorLineaArriba6, colorLineaArriba7, colorLineaArriba8, colorLineaArriba9, colorLineaArriba10, colorLineaArriba11, colorLineaArriba12;
+color colorLineaMedio1, colorLineaMedio2, colorLineaMedio3, colorLineaMedio4, colorLineaMedio5, colorLineaMedio6, colorLineaMedio7, colorLineaMedio8, colorLineaMedio9, colorLineaMedio10, colorLineaMedio11, colorLineaMedio12;
 color colorLineaAbajo1, colorLineaAbajo2, colorLineaAbajo3, colorLineaAbajo4, colorLineaAbajo5, colorLineaAbajo6, colorLineaAbajo7, colorLineaAbajo8, colorLineaAbajo9, colorLineaAbajo10, colorLineaAbajo11, colorLineaAbajo12;
 color colorAz1, colorAz2, colorAz3, colorAm1, colorAm2, colorAm3, colorNar1, colorNar2, colorNar3;
 int posX = 481;
@@ -25,6 +26,19 @@ void setup() {
   colorLineaArriba10 = color (110, 139, 145);
   colorLineaArriba11 = color (45, 90, 108);
   colorLineaArriba12 = color (16, 32, 25);
+
+  colorLineaMedio1 = color (25, 35, 47);
+  colorLineaMedio2 = color (74, 59, 36);
+  colorLineaMedio3 = color (25, 28, 27);
+  colorLineaMedio4 = color (91, 87, 83);
+  colorLineaMedio5 = color (100, 79, 55);
+  colorLineaMedio6 = color (19, 30, 29);
+  colorLineaMedio7 = color (81, 78, 89);
+  colorLineaMedio8 = color (127, 110, 89);
+  colorLineaMedio9 = color (29, 34, 43);
+  colorLineaMedio10 = color (87, 78, 83);
+  colorLineaMedio11 = color (116, 97, 86);
+  colorLineaMedio12 = color (23, 37, 47);
 
   colorLineaAbajo1 = color (40, 39, 21);
   colorLineaAbajo2 = color (118, 144, 92);
