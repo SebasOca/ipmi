@@ -5,7 +5,8 @@ color colorLineaArriba1, colorLineaArriba2, colorLineaArriba3, colorLineaArriba4
 color colorLineaMedio1, colorLineaMedio2, colorLineaMedio3, colorLineaMedio4, colorLineaMedio5, colorLineaMedio6, colorLineaMedio7, colorLineaMedio8, colorLineaMedio9, colorLineaMedio10, colorLineaMedio11, colorLineaMedio12;
 color colorLineaAbajo1, colorLineaAbajo2, colorLineaAbajo3, colorLineaAbajo4, colorLineaAbajo5, colorLineaAbajo6, colorLineaAbajo7, colorLineaAbajo8, colorLineaAbajo9, colorLineaAbajo10, colorLineaAbajo11, colorLineaAbajo12;
 color colorAz1, colorAz2, colorAz3, colorAm1, colorAm2, colorAm3, colorNar1, colorNar2, colorNar3;
-int posX = 481;
+int posXInicial = 100;
+int posYInicial = 0;
 boolean click = false;
 
 
@@ -56,17 +57,9 @@ void setup() {
 
 void draw() {
   fondoRayado();
-  rotate(0.0046);
-  image(obra, 0, 0, 400, 400);
-  tresCirculos();
+  //rotate(0.0046);
+  //image(obra, 0, 0, 400, 400);
+  //tresCirculos();
 
-  if (mousePressed == true) {
-    if (posX <= 481) {
-      posX++;
-    } else if (posX>= 483) {
-      posX--;
-    }
-  } else {
-    posX=481;
-  }
+
 }

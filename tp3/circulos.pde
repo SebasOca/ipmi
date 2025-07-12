@@ -12,17 +12,14 @@ void circulo(int posX1, int posX2, int posY1, color colorSup, color colorMed, co
 
     for (int j = 0; j < alturaLinea; j++) {
       float degradado = map(j, 0, alturaLinea, 0, 1);
+      
       color colorDeg = lerpColor(colorMed, colorSup, degradado);
       stroke(colorDeg);
-      //strokeWeight(1);
       line(posXAz, posY1 - j, posXAz + 1, posY1 - j);
       line(posXAz2, posY1 - j, posXAz2 + 1, posY1 - j);
-    }
-    for (int j = 0; j < alturaLinea; j++) {
-      float degradado = map(j, 0, alturaLinea, 0, 1);
-      color colorDeg = lerpColor(colorMed, colorInf, degradado);
-      stroke(colorDeg);
-      //strokeWeight(1);
+      
+      color colorDeg2 = lerpColor(colorMed, colorInf, degradado);
+      stroke(colorDeg2);
       line(posXAz, posY1 + j, posXAz + 1, posY1 + j);
       line(posXAz2, posY1 + j, posXAz2 + 1, posY1 + j);
     }
