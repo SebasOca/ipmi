@@ -23,6 +23,8 @@ void lineaFondo(float posX, float posY, color colorArriba, color colorMedio, col
       float intermedio = map(i, 0, 170, 0, 1);
       color degrade = lerpColor(colorArriba, colorMedio, intermedio);
       stroke(degrade);
+      
+      
       if (mousePressed == true && mouseX >= 400 && mouseX <= 800) {
         line(posX+x+mouseX/4, posY+i, posX+0.5+x+mouseX/4, posY+100+i);
       } else {
