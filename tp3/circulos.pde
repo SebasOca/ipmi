@@ -1,4 +1,4 @@
-void tresCirculos(){
+void tresCirculos() {
   circulo(posXCirculos, posXCirculos+244, posYCirculos, color(5, 7, 50), color(104, 58, 46), color(152, 92, 44));
   circulo(posXCirculos+55, posXCirculos+299, posYCirculos-74, color(33, 66, 172), color(24, 48, 120), color(51, 20, 0));
   circulo(posXCirculos+105, posXCirculos+349, posYCirculos, color(115, 135, 97), color(141, 125, 75), color(202, 195, 84));
@@ -12,12 +12,12 @@ void circulo(int posX1, int posX2, int posY1, color colorSup, color colorMed, co
 
     for (int j = 0; j < alturaLinea; j++) {
       float degradado = map(j, 0, alturaLinea, 0, 1);
-      
+
       color colorDeg = lerpColor(colorMed, colorSup, degradado);
       stroke(colorDeg);
       line(posXAz, posY1 - j, posXAz + 1, posY1 - j);
       line(posXAz2, posY1 - j, posXAz2 + 1, posY1 - j);
-      
+
       color colorDeg2 = lerpColor(colorMed, colorInf, degradado);
       stroke(colorDeg2);
       line(posXAz, posY1 + j, posXAz + 1, posY1 + j);
