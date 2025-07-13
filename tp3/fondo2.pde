@@ -19,7 +19,7 @@ void fondoRayado() {
 void lineaFondo(float posX, float posY, color colorArriba, color colorMedio, color colorAbajo) {
   for (int x = 0; x < 1; x++) {
     for (int i = 0; i < 200; i++) {
-      float intermedio = map(i, 0, 170, 0, 1);
+      float intermedio = map(i, -50, 250, 0, 1);
 
       color degrade = lerpColor(colorArriba, colorMedio, intermedio);
       stroke(degrade);

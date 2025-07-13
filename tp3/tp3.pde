@@ -1,4 +1,4 @@
-//Enlace al video:
+//Enlace al video: https://youtu.be/lCLZEloqkNc
 
 PImage obra;
 color colorLineaArriba1, colorLineaArriba2, colorLineaArriba3, colorLineaArriba4, colorLineaArriba5, colorLineaArriba6, colorLineaArriba7, colorLineaArriba8, colorLineaArriba9, colorLineaArriba10, colorLineaArriba11, colorLineaArriba12;
