@@ -1,7 +1,6 @@
 void fondoRayado() {
-  int posXFondo = 100;
   rotate(-0.002);
-  for (int j = 0; j < 800; j = j+12) {
+  for (int j = 0; j < 600; j = j+12) {
     lineaFondo(posXFondo+j, 0, colorLineaArriba1, colorLineaMedio1, colorLineaAbajo1);
     lineaFondo(posXFondo+1+j, 0, colorLineaArriba2, colorLineaMedio2, colorLineaAbajo2);
     lineaFondo(posXFondo+2+j, 0, colorLineaArriba3, colorLineaMedio3, colorLineaAbajo3);
@@ -21,24 +20,35 @@ void lineaFondo(float posX, float posY, color colorArriba, color colorMedio, col
   for (int x = 0; x < 1; x++) {
     for (int i = 0; i < 200; i++) {
       float intermedio = map(i, 0, 170, 0, 1);
+
       color degrade = lerpColor(colorArriba, colorMedio, intermedio);
       stroke(degrade);
-      
-      
-      if (mousePressed == true && mouseX >= 400 && mouseX <= 800) {
-        line(posX+x+mouseX/4, posY+i, posX+0.5+x+mouseX/4, posY+100+i);
-      } else {
-        line(posX+x, posY+i, posX+0.5+x, posY+100+i);
-      }
-
+      line(posX+x, posY+i, posX+0.5+x, posY+100+i);
 
       color degrade2 = lerpColor(colorMedio, colorAbajo, intermedio);
       stroke(degrade2);
-      if (mousePressed == true && mouseX >= 400 && mouseX <= 800) {
-        line(posX+x+mouseX/4, posY+200+i, posX+0.5+x+mouseX/4, posY+300+i);
-      } else {
-        line(posX+x, posY+200+i, posX+0.5+x, posY+300+i);
-      }
+      line(posX+x, posY+200+i, posX+0.5+x, posY+300+i);
+
+
+      /*     if (mousePressed == true && mouseX >= 400 && mouseX <= 800) {
+       line(posX+x+mouseX/4, posY+i, posX+0.5+x+mouseX/4, posY+100+i);
+       } else {
+       line(posX+x, posY+i, posX+0.5+x, posY+100+i);
+       }
+       
+      /* if (mousePressed == false) {
+       line(posX+x, posY+i, posX+0.5+x, posY+100+i);
+       } else if (mousePressed == true && mouseX >= 400 && mouseX <= 800){
+       line(posX+x+mouseX/4, posY+i, posX+0.5+x+mouseX/4, posY+100+i);
+       }
+       
+       color degrade2 = lerpColor(colorMedio, colorAbajo, intermedio);
+       stroke(degrade2);
+       if (mousePressed == true && mouseX >= 400 && mouseX <= 800) {
+       line(posX+x+mouseX/4, posY+200+i, posX+0.5+x+mouseX/4, posY+300+i);
+       } else {
+       line(posX+x, posY+200+i, posX+0.5+x, posY+300+i);
+       }*/
     }
   }
 }

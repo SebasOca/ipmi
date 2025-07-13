@@ -6,6 +6,10 @@ color colorLineaMedio1, colorLineaMedio2, colorLineaMedio3, colorLineaMedio4, co
 color colorLineaAbajo1, colorLineaAbajo2, colorLineaAbajo3, colorLineaAbajo4, colorLineaAbajo5, colorLineaAbajo6, colorLineaAbajo7, colorLineaAbajo8, colorLineaAbajo9, colorLineaAbajo10, colorLineaAbajo11, colorLineaAbajo12;
 color colorAz1, colorAz2, colorAz3, colorAm1, colorAm2, colorAm3, colorNar1, colorNar2, colorNar3;
 
+int posXFondo = 300;
+int posXCirculos = 426;
+int posYCirculos = 234;
+
 
 void setup() {
   size (800, 400);
@@ -57,4 +61,22 @@ void draw() {
   rotate(0.0046);
   image(obra, 0, 0, 400, 400);
   tresCirculos();
+}
+
+void mouseClicked () {
+  if (mouseButton == RIGHT) {
+    posXFondo++;
+    posXCirculos--;
+    posYCirculos= posYCirculos+2;
+  } else if (mouseButton == LEFT) {
+    posXFondo--;
+    posXCirculos++;
+    posYCirculos= posYCirculos-2;
+  }
+
+  if (mouseX<width/2 && mouseY<height) {
+    posXFondo = 100;
+    posXCirculos = 426;
+    posYCirculos = 234;
+  }
 }
