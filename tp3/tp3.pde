@@ -66,11 +66,11 @@ void draw() {
 void mouseClicked () {
   if (mouseButton == RIGHT) {
     posXFondo++;
-    posXCirculos--;
+    posXCirculos= posXCirculos-2;
     posYCirculos= posYCirculos+2;
   } else if (mouseButton == LEFT) {
     posXFondo--;
-    posXCirculos++;
+    posXCirculos= posXCirculos+2;
     posYCirculos= posYCirculos-2;
   }
 

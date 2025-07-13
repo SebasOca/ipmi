@@ -1,7 +1,7 @@
 void tresCirculos(){
-  circulo(posXCirculos, 670, posYCirculos, color(5, 7, 50), color(104, 58, 46), color(152, 92, 44));
-  circulo(posXCirculos+55, 725, posYCirculos-74, color(33, 66, 172), color(24, 48, 120), color(51, 20, 0));
-  circulo(posXCirculos+105, 775, posYCirculos, color(115, 135, 97), color(141, 125, 75), color(202, 195, 84));
+  circulo(posXCirculos, posXCirculos+244, posYCirculos, color(5, 7, 50), color(104, 58, 46), color(152, 92, 44));
+  circulo(posXCirculos+55, posXCirculos+299, posYCirculos-74, color(33, 66, 172), color(24, 48, 120), color(51, 20, 0));
+  circulo(posXCirculos+105, posXCirculos+349, posYCirculos, color(115, 135, 97), color(141, 125, 75), color(202, 195, 84));
 }
 
 void circulo(int posX1, int posX2, int posY1, color colorSup, color colorMed, color colorInf) {

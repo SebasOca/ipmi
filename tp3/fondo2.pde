@@ -28,27 +28,6 @@ void lineaFondo(float posX, float posY, color colorArriba, color colorMedio, col
       color degrade2 = lerpColor(colorMedio, colorAbajo, intermedio);
       stroke(degrade2);
       line(posX+x, posY+200+i, posX+0.5+x, posY+300+i);
-
-
-      /*     if (mousePressed == true && mouseX >= 400 && mouseX <= 800) {
-       line(posX+x+mouseX/4, posY+i, posX+0.5+x+mouseX/4, posY+100+i);
-       } else {
-       line(posX+x, posY+i, posX+0.5+x, posY+100+i);
-       }
-       
-      /* if (mousePressed == false) {
-       line(posX+x, posY+i, posX+0.5+x, posY+100+i);
-       } else if (mousePressed == true && mouseX >= 400 && mouseX <= 800){
-       line(posX+x+mouseX/4, posY+i, posX+0.5+x+mouseX/4, posY+100+i);
-       }
-       
-       color degrade2 = lerpColor(colorMedio, colorAbajo, intermedio);
-       stroke(degrade2);
-       if (mousePressed == true && mouseX >= 400 && mouseX <= 800) {
-       line(posX+x+mouseX/4, posY+200+i, posX+0.5+x+mouseX/4, posY+300+i);
-       } else {
-       line(posX+x, posY+200+i, posX+0.5+x, posY+300+i);
-       }*/
     }
   }
 }
